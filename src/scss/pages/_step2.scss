@@ -1,0 +1,98 @@
+.step2 {
+  #E41 {
+    width: auto;
+  }
+
+  &.multimedia {
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  .multimedia__content {
+    * {
+      text-align: center;
+      width: 500px;
+    }
+
+    &--title {
+      color: $white;
+      font-size: $big;
+
+    }
+
+    &--subtitle {
+      color: $white;
+      font-size: 2.0rem;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 20px;
+    }
+
+    &--caption {
+      color: $white;
+      font-size: 1.6rem;
+      margin-top: 40px;
+    }
+
+    .btn {
+      width: 296px;
+    }
+
+  }
+
+  .content {
+    &__container {
+      width: 488px;
+
+      .yellowHeder {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+      }
+
+      .summaryComponent {
+        margin-bottom: 32px;
+
+        .dropDownPanel {
+          .record {
+            &__main {
+              &__text {
+                display: block;
+
+                &--description {
+                  justify-content: flex-start;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .TitleCalculator {
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      &__border {
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .TitleCalculator {
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+
+        hr {
+          margin-left: 16px;
+          margin-right: 16px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

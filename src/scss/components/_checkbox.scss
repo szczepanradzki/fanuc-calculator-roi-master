@@ -1,0 +1,68 @@
+.checkbox {
+  position: relative;
+  margin-top: 20px;
+
+  input[type="checkbox"] {
+    display: none;
+
+    & + label {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -26px;
+        width: 16px;
+        height: 16px;
+        box-sizing: border-box;
+        border: 2px solid $black;
+        background: transparent;
+      }
+
+      &:after {
+        content: "\e910";
+        position: absolute;
+        top: 7px;
+        left: -23px;
+        color: $black;
+        font-family: "icomoon";
+        font-size: 1px;
+      }
+    }
+
+    &:checked {
+      & + label {
+        &:before {
+          background: $yellow;
+        }
+
+        &:after {
+          font-size: $nominal;
+        }
+      }
+    }
+  }
+
+  &__agreement {
+    margin-left: 47px;
+    width: 320px;
+  }
+
+  &__label {
+    display: inline-block;
+    max-width: 100%;
+    font-size: $nominal;
+
+    a {
+      color: $black;
+      font-size: $nominal;
+      text-decoration: underline;
+
+      &:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}

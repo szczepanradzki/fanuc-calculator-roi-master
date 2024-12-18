@@ -1,0 +1,62 @@
+.user-details {
+  justify-content: center;
+  min-height: calc(100vh - 112px);
+
+  &.multimedia {
+    background-position: 0 -17vh;
+    background-size: 125vh;
+  }
+
+  .multimedia__content {
+    &--title {
+      margin-bottom: 32px;
+      width: 330px;
+      color: $white;
+      text-align: center;
+      line-height: 1;
+      font-size: 8rem;
+    }
+
+    &--subtitle {
+      margin-bottom: 80px;
+      color: $white;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .content {
+    &__header {
+      font-size: 2rem;
+      line-height: 21px;
+    }
+
+    &__description {
+      margin-bottom: 64px;
+      color: rgba(0, 0, 0, .5);
+      font-size: $regular;
+      line-height: 21px;
+    }
+  }
+
+  .agreement {
+    margin: 10px 0 0 20px;
+    width: 347px;
+    font-size: $nominal;
+
+    a {
+      color: $black;
+      font-size: $nominal;
+      text-decoration: underline;
+
+      &:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    padding: 68px;
+  }
+}

@@ -1,0 +1,144 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?3nsnro') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?3nsnro') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?3nsnro##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark {
+  &:before {
+    content: $icon-checkmark; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-info {
+  &:before {
+    content: $icon-info; 
+  }
+}
+.icon-sign-in {
+  &:before {
+    content: $icon-sign-in; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-lock {
+  &:before {
+    content: $icon-lock; 
+  }
+}
+.icon-sign-out {
+  &:before {
+    content: $icon-sign-out; 
+  }
+}
+.icon-plus-circle {
+  &:before {
+    content: $icon-plus-circle; 
+  }
+}
+.icon-facebook-with-circle {
+  &:before {
+    content: $icon-facebook-with-circle; 
+  }
+}
+.icon-linkedin-with-circle {
+  &:before {
+    content: $icon-linkedin-with-circle; 
+  }
+}
+.icon-youtube-with-circle {
+  &:before {
+    content: $icon-youtube-with-circle; 
+  }
+}
+.icon-chevron-right {
+  &:before {
+    content: $icon-chevron-right; 
+  }
+}
+.icon-chevron-down {
+  &:before {
+    content: $icon-chevron-down; 
+  }
+}
+.icon-chevron-up {
+  &:before {
+    content: $icon-chevron-up; 
+  }
+}
+.icon-user {
+  &:before {
+    content: $icon-user; 
+  }
+}
+.icon-play_circle_filled {
+  &:before {
+    content: $icon-play_circle_filled; 
+  }
+}
+.icon-flag {
+  &:before {
+    content: $icon-flag; 
+  }
+}
+.icon-edit {
+  &:before {
+    content: $icon-edit; 
+  }
+}
+.icon-banknote {
+  &:before {
+    content: $icon-banknote; 
+  }
+}
+.icon-check1 {
+  &:before {
+    content: $icon-check1; 
+  }
+}
+.icon-bill {
+  &:before {
+    content: $icon-bill; 
+  }
+}
+.icon-money {
+  &:before {
+    content: $icon-money; 
+  }
+}
+.icon-cash {
+  &:before {
+    content: $icon-cash; 
+  }
+}
+

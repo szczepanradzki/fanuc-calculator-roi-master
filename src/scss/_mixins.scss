@@ -1,0 +1,23 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+    url('#{$url}.woff') format('woff'),
+    url('#{$url}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+@mixin flex($align, $justify, $direction: row, $wrap: wrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@include font-face("din-pro", "../assets/fonts/DINPro-Black", 900);
+@include font-face("din-pro", "../assets/fonts/DINPro-Bold", 700);
+@include font-face("din-pro", "../assets/fonts/DINPro-Medium", 400);

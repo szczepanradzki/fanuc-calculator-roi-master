@@ -1,0 +1,17 @@
+.icon {
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+
+  &__tooltip {
+    width: 400px !important;
+    max-width: 100%;
+    color: $black !important;
+    font-family: "din-pro", sans-serif;
+    font-size: $regular;
+    line-height: 1.2;
+    border: 1px solid $black !important;
+    background: $white !important;
+  }
+}

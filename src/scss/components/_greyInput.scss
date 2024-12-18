@@ -1,0 +1,40 @@
+.greyInput {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    width: 184px;
+    height: 43px;
+    background-color: $super-white;
+    margin-left: 16px;
+
+    .numericInput {
+      width: 100%;
+      max-width: 100%;
+
+      &--input {
+        width: 128px;
+        font-size: $medium;
+        font-weight: 700;
+        text-align: left;
+        padding: 5px;
+      }
+    }
+
+    &__currency {
+      @include flex(center, center);
+      width: 56px;
+      font-size: $small-medium;
+      font-weight: 700;
+      background-color: $medium-gray;
+    }
+  }
+
+  &__description {
+    width: 300px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: $small;
+  }
+}

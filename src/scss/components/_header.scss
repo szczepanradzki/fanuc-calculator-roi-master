@@ -1,0 +1,35 @@
+header {
+  background-color: $yellow;
+
+  .header {
+    @include flex(center, space-between);
+    padding: 0 122px 0 127px;
+    height: 64px;
+
+    &__action-buttons {
+      @include flex(center, flex-end);
+
+      &--login {
+        margin-right: 16px;
+        font-weight: 700;
+      }
+
+      &--social {
+        margin: 0 7px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        .icon {
+          font-size: 2.9rem;
+          color: $black;
+        }
+      }
+    }
+  }
+}

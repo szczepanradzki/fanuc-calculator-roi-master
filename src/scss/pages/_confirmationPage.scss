@@ -1,0 +1,11 @@
+.confirmPage {
+  @include flex(center, center, column);
+  width: 358px;
+  text-align: center;
+
+  &__title {
+    margin: 32px 0 16px;
+    font-size: $medium;
+    font-weight: 700;
+  }
+}

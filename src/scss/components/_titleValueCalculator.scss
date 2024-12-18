@@ -1,0 +1,12 @@
+.TitleValueCalculator {
+  @include flex(center, space-between, row, nowrap);
+
+  &.bg-gray {
+    margin-top: 32px;
+
+    .TitleCalculator {
+      padding: 5px 0 5px 16px;
+      margin: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .9);
+  z-index: 99;
+
+  &__dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 67px 67px 60px;
+    width: 480px;
+    max-width: 100%;
+    background-color: $white;
+    transform: translate(-50%, -50%);
+    &--video {
+      width: 60vw;
+      height: 70vh;
+    }
+
+    &--close {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: $regular;
+      cursor: pointer;
+    }
+
+    &--text {
+      text-align: center;
+      font-size: $regular;
+      font-weight: 700;
+    }
+
+    &--button {
+      margin: 36px auto 24px;
+      width: 100%;
+      height: 40px;
+      &:nth-of-type(n+2) {
+        margin-top: 0;
+      }
+    }
+
+    &--trouble {
+      text-align: center;
+      font-size: $small;
+      font-weight: 700;
+    }
+
+    &--privacy {
+      padding: 15px 35px;
+      width: 50vw;
+      max-height: 80vh;
+      border-radius: 10px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        border: 1px solid $black;
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $black;
+      }
+
+      .header {
+        &__title {
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 3rem;
+        }
+
+        &__subtitle {
+          text-align: center;
+          font-size: 2.2rem;
+        }
+
+        &__description {
+          font-size: 1.6rem;
+          line-height: 1.2;
+        }
+      }
+
+      .body {
+        margin-top: 20px;
+
+        h2 {
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 2.4rem;
+        }
+
+        p,
+        a,
+        li {
+          font-size: $regular;
+          line-height: 1.2;
+        }
+
+        li {
+          margin-bottom: 10px;
+        }
+
+        & > ul, & > p {
+          margin-bottom: 20px;
+        }
+
+        & > ul {
+          li {
+            & > ul {
+              margin: 10px 0 0 15px;
+
+              li {
+                & > ul {
+                  margin: 10px 0 0 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

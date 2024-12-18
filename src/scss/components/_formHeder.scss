@@ -1,0 +1,59 @@
+.formHeder {
+  position:relative;
+  @include flex(center, center);
+  height: 48px;
+  background-color: $strong-white;;
+  box-shadow: 0 4px 2px -2px $light-gray;
+
+  &__icons {
+    display: flex;
+    margin-right: auto;
+    color: $black;
+
+    &--icon {
+      a {
+        @include flex(center, center);
+        color: $black;
+        text-transform: uppercase;
+        pointer-events: none;
+        cursor: default;
+
+        i {
+          margin: 0 10px 0 26px;
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: $regular;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__steps {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+
+    &--step {
+      font-size: $medium;
+      font-weight: 700;
+      opacity: 0.25;
+      cursor: pointer;
+
+      &:not(:last-of-type) {
+        margin-right: 16px;
+      }
+
+      &.disabled {
+        cursor: default;
+      }
+    }
+
+    .active {
+      opacity: 1;
+    }
+  }
+}

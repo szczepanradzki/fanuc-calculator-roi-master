@@ -1,0 +1,115 @@
+.btn {
+  font-size: $regular;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &__action {
+    padding: 4px 14px;
+    color: $black;
+    font-size: $regular;
+    font-weight: 700;
+    background-color: $yellow;
+    &[disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &--submit {
+      width: 100%;
+      height: 40px;
+    }
+
+    &--register {
+      margin-top: 27px;
+      width: 173px;
+      height: 40px;
+      float: right;
+      clear: both;
+    }
+
+    &--back,
+    &--next {
+      width: 173px;
+      height: 40px;
+      font-weight: 700;
+    }
+
+    &--back {
+      color: $white;
+      background-color: $black;
+    }
+
+    &--next {
+      color: $black;
+      line-height: 40px;
+      text-align: center;
+      background-color: $yellow;
+
+      a {
+        color: $black;
+      }
+    }
+
+    &--thanks {
+      padding: 10px 54px;
+      margin-top: 32px;
+    }
+  }
+
+  &__switchButton {
+    @include flex(center, space-around);
+    height: 32px;
+    width: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 16px;
+  }
+
+  &.active {
+    background-color: $yellow;
+  }
+
+  &__multimedia {
+    width: 296px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: $black;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: $white;
+
+    &--colored {
+      background-color: $yellow;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__edit {
+    margin-top: 16px;
+    float: right;
+    font-size: $regular;
+  }
+
+  &__transparent {
+    display: block;
+    margin: 20px auto;
+    color: rgba(0, 0, 0, .5);
+    font-size: $small;
+    font-weight: 700;
+  }
+
+  &.disabled {
+    pointer-events: none;
+  }
+}

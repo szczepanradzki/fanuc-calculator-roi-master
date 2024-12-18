@@ -1,0 +1,22 @@
+.dropDownPanel {
+
+  &__heder {
+    @include flex(center, space-between);
+    padding: 0 16px 5px;
+    font-weight: 700;
+
+    p {
+      cursor: default;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s;
+
+    &--open {
+      max-height: 300px;
+    }
+  }
+}

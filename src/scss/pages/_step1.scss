@@ -1,0 +1,100 @@
+.step1 {
+
+  &.multimedia {
+    background-position: 0 0;
+    background-size: cover;
+    z-index: 1;
+
+    &:after {
+      z-index: 1;
+    }
+  }
+
+  .multimedia__content {
+    &--wrapper {
+      width: 500px;
+      text-align: center;
+    }
+
+    &--title {
+      color: $white;
+      font-size: 3.6rem;
+
+    }
+
+    &--subtitle {
+      color: $white;
+      font-size: 2.0rem;
+      margin-top: 40px;
+    }
+
+    &--caption {
+      color: $white;
+      font-size: 1.6rem;
+      margin-top: 40px;
+    }
+
+    &--icon {
+      color: $yellow;
+
+      i {
+        font-size: 70px;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .content {
+    &__currency {
+      display: flex;
+      align-items: center;
+      font-size: $regular;
+      margin-bottom: 64px;
+
+      .switchButton {
+        margin-left: 20px;
+      }
+    }
+
+    &__text {
+      width: 386px;
+      text-align: center;
+    }
+
+    &__container {
+      margin-top: 66px;
+      width: 488px;
+
+      .yellowHeder {
+        margin-left: 16px;
+      }
+
+      .TitleCalculator {
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+      }
+
+      &--button {
+        display: inline-block;
+        margin-bottom: 35px;
+        margin-left: 16px;
+      }
+    }
+
+    //todo: the same in user details to separete component
+    &__header {
+      font-size: 2rem;
+      line-height: 21px;
+    }
+
+    &__description {
+      color: rgba(0, 0, 0, .5);
+      font-size: $regular;
+      line-height: 21px;
+    }
+  }
+
+}

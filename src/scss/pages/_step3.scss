@@ -1,0 +1,51 @@
+.step3 {
+  &.multimedia {
+    background-position: -200px 0px;
+    background-size: cover;
+  }
+
+  .multimedia__content {
+    * {
+      text-align: center;
+      width: 500px;
+    }
+
+    &--title {
+      color: $white;
+      font-size: 3.6rem;
+
+    }
+
+    &--subtitle {
+      color: $white;
+      font-size: 2.0rem;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 20px;
+    }
+
+    .btn {
+      width: 296px;
+    }
+
+  }
+
+  .content {
+    &__container {
+      width: 488px;
+
+      .yellowHeder {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+      }
+
+      .TitleCalculator {
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+    }
+  }
+}

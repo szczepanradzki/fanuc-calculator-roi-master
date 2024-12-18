@@ -1,0 +1,63 @@
+.homepage {
+  &.multimedia {
+    background-size: cover;
+    background-position: -15vw 0;
+  }
+
+  .multimedia__content {
+
+    .title {
+      color: $white;
+      font-size: 4.8rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .video {
+      display: block;
+      margin: 48px auto 68px;
+    }
+
+    .media-caption {
+      @include flex(center, center);
+
+      .text {
+        margin-right: 15px;
+        color: $white;
+        font-size: $regular;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &.content {
+    justify-content: center;
+  }
+
+  .content {
+    padding-top: 0;
+
+    &__title {
+      height: 104px;
+      margin: 40px 0 11px;
+      font-size: 6.4rem;
+      line-height: 83px;
+    }
+
+    &__text {
+      width: 370px;
+      max-width: 100%;
+      text-align: center;
+      font-size: $regular;
+      font-weight: 700;
+
+      &--submission {
+        margin: 32px 0;
+
+        .link {
+          color: #717171;
+        }
+      }
+    }
+  }
+}

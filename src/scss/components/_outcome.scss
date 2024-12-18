@@ -1,0 +1,36 @@
+.outcome {
+  &__content {
+    @include flex(center, space-between, row, nowrap);
+
+    &__numeric {
+      display: flex;
+      margin-right: 16px;
+
+      p {
+        font-size: 5.5rem;
+        margin-right: 8px;
+      }
+
+      &--smallUnit {
+        display: flex;
+        align-items: flex-end;
+
+        p:last-of-type {
+          font-size: $medium;
+          margin-bottom: 8px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  hr {
+    height: 2px;
+    background-color: $black;
+    border: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

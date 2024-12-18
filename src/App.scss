@@ -1,0 +1,42 @@
+/* IMPORT GLOBALS */
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/globals";
+
+@import "scss/overrides";
+@import "scss/icomoon/style";
+@import "scss/email";
+
+/* IMPORT COMPONENTS */
+@import "scss/components/header";
+@import "scss/components/multimedia-panel";
+@import "scss/components/switchButton";
+@import "scss/components/form";
+@import "scss/components/button";
+@import "scss/components/formHeder";
+@import "scss/components/record";
+@import "scss/components/dropDownPanel";
+@import "scss/components/yellowHeder";
+@import "scss/components/titleCalculator";
+@import "scss/components/titleValueCalculator";
+@import "scss/components/attribute";
+@import "scss/components/navigationButtons";
+@import "scss/components/numericInput";
+@import "scss/components/greyInput";
+@import "scss/components/popup";
+@import "scss/components/outcome";
+@import "scss/components/tooltip";
+@import "scss/components/summaryTable";
+@import "scss/components/checkbox";
+
+/* IMPORT PAGES */
+@import "scss/pages/homepage";
+@import "scss/pages/userDetails";
+@import "scss/pages/passwordReset";
+@import "scss/pages/thanksPage";
+@import "scss/pages/confirmationPage";
+@import "scss/pages/step1";
+@import "scss/pages/step2";
+@import "scss/pages/step3";
+@import "scss/pages/step4";
+@import "scss/pages/step5";

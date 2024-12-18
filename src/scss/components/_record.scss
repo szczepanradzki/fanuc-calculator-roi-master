@@ -1,0 +1,44 @@
+.record {
+  &__main {
+    @include flex(flex-start, space-between, row, nowrap);
+    padding-left: 16px;
+    line-height: 24px;
+
+    &__text {
+      display: flex;
+      width: 75%;
+
+      &--description {
+        @include flex(flex-end, space-around);
+        font-size: $small;
+        font-weight: 500;
+        vertical-align: bottom;
+      }
+    }
+
+    &--input {
+      input {
+        font-family: "din-pro", sans-serif;
+        font-weight: 700;
+        border: none;
+        background: transparent;
+      }
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    font-size: $small;
+    font-weight: 500;
+    line-height: 2.0;
+    padding-left: 16px;
+    width: 70%;
+
+    p {
+      font-size: $small;
+    }
+  }
+}

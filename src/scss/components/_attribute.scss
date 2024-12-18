@@ -1,0 +1,80 @@
+.attribute {
+  @include flex(flex-start, space-between, row, nowrap);
+  padding: 5px 0px 5px 0px;
+
+  &__text {
+    max-width: 70%;
+    padding-left: 16px;
+
+    &__header {
+      font-size: $regular;
+
+      span {
+        font-size: $regular;
+      }
+
+      .icon {
+        margin-left: 5px;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+    }
+
+    &__description {
+      font-size: $small;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  .numericInput {
+    margin-top: 0px;
+  }
+
+  .topMargin {
+    margin-top: 20px;
+  }
+}
+
+.borderBox {
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .numericInput--input {
+    font-weight: 700;
+  }
+
+  .numericInput--unit {
+    font-weight: 700;
+  }
+}
+
+.additionalBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 142px;
+
+  hr {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .icon {
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .attribute__text__header {
+    span {
+      font-size: $small;
+    }
+  }
+}
